@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="ui/app.css">
+    <title>Nodejs Mongoose CRUD</title>
+</head>
+<body>
+    
+    <div class="container p-4">
+        <h1 class="text-center text-white">Electron and Mongoose CRUD</h1>
+
+        <form class="pt-3" id="taskForm">
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Task's Name" id="taskName">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="taskDescription" rows="3" placeholder="Task's Description"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="form-control btn btn-success btn-block" type="submit">Save</button>
+            </div>
+        </form>
+
+        <div class="row" id="taskList"></div>
+    </div>
+
+    <script src="ui/app.js"></script>
+
+</body>
+</html>
